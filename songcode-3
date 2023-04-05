@@ -88,3 +88,24 @@
 #define NOTE_D8  4699
 #define NOTE_DS8 4978
 #define REST      0
+
+int maintempo = 8000;
+int tempo = 0.5* maintempo;
+int quarter = tempo/4;
+int eigth = tempo/8
+int sixteenth = tempo/16;
+int dotquarter = tempo * 0.375;
+int dothalf = tempo/3; 
+int whole = tempo;
+int smallbreak = 100;
+
+
+int maintempo = 8000;
+int tempo = 0.5* maintempo;
+int quarter = tempo/4;
+int eigth = tempo/8
+int sixteenth = tempo/16;
+int dotquarter = tempo * 0.375;
+int dothalf = tempo/3; 
+int whole = tempo;
+int smallbreak = 100;
