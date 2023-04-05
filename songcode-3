@@ -109,3 +109,4 @@ int dotquarter = tempo * 0.375;
 int dothalf = tempo/3; 
 int whole = tempo;
 int smallbreak = 100;
+
