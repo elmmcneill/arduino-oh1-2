@@ -102,8 +102,61 @@ int smallbreak = 100;
 void setup ()
 {
 for (int i = 0; i < 3; i++){
-    tone(output,311);
-    delay(tempo/8);
+    //first measure
+    tone(12,311);
+    delay(eigth);
+    noTone(12);
+    delay(100);
+
+    tone(12,262)
+    delay(eight);
+    noTone(12);
+    delay(100):
+
+    tone(12,311);
+    delay(eigth);
+    noTone(12);
+    delay(100);
+
+    tone(12,262);
+    delay(eigth);
+    noTone(12);
+    delay(100);
+
+    tone(12,311);
+    delay(eigth);
+    noTone(12);
+    delay(100); 
+
+    tone(12,294)
+    delay(quarter);
+    noTone(12);
+    delay(100):
+    
+    //second measure
+
+    tone(12,247);
+    delay(quarter);
+    noTone(12);
+    delay(100);
+
+    tone(12,196)
+    delay(quarter);
+    noTone(12);
+    delay(100);
+
+    tone(12,175);
+    delay(quarter);
+    noTone(12);
+    delay(100);
+
+    tone(12,196);
+    delay(quarter);
+    noTone(12);
+    delay (100)
+
+    //third measure
+
 
 }}
 
