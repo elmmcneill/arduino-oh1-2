@@ -156,6 +156,49 @@ for (int i = 0; i < 3; i++){
     delay (100)
 
     //third measure
+    tone(12,311);
+    delay(eigth);
+    noTone(12);
+    delay(100);
+
+    tone(12,262);
+    delay(eigth);
+    noTone(12);
+    delay(100);
+
+    tone(12,311);
+    delay(eigth); 
+    noTone(12);
+    delay(100);
+
+    tone(12,262);
+    delay(eigth);
+    noTone(12);
+    delay(100);
+
+    toe(12,311);
+    delay(eigth);
+    noTone(12);
+    delay(100);
+
+    tone (12,349);
+    delay(eigth);
+    noTone(12);
+    delay(100);
+
+    //fourth measure
+    tone(12,294);
+    delay(dothalf);
+    noTone(12);
+    delay(100+eigth)
+
+    tone(12,392);
+    delay(eight);
+    noTone(12);
+    delay(100);
+
+    //fifth measure
+    
 
 
 }}
