@@ -220,23 +220,38 @@ for (int i = 0; i < 3; i++){
     noTone(12);
     delay(50);
 
-    tone(12,311);
+    tone(12,156);
     delay(146);
     noTone(12);
     delay(50);
     //used lower tone
 
-    tone(12,262);
+    tone(12,131);
     delay(146);
     noTone(12);
     delay(50);
 
-    tone(12,311);
+    tone(12,156);
     delay(291);
     noTone(12);
     delay(50);
 
     //sixth measure
+    tone(12,156);
+    delay(291);
+    noTone(12);
+    delay(50)
+
+    tone(12,147)
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,147)
+    delay(291);
+    noTone(12);
+    delay(50);
+
 
     
 
