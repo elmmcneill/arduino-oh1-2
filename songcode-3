@@ -104,101 +104,102 @@ void setup ()
 for (int i = 0; i < 3; i++){
     //first measure
     tone(12,311);
-    delay(eigth);
+    delay(291);
     noTone(12);
     delay(100);
 
     tone(12,262)
-    delay(eight);
+    delay(291);
     noTone(12);
     delay(100):
 
     tone(12,311);
-    delay(eigth);
+    delay(291);
     noTone(12);
     delay(100);
 
     tone(12,262);
-    delay(eigth);
+    delay(291);
     noTone(12);
     delay(100);
 
     tone(12,311);
-    delay(eigth);
+    delay(291);
     noTone(12);
     delay(100); 
 
     tone(12,294)
-    delay(quarter);
+    delay(583);
     noTone(12);
     delay(100):
     
     //second measure
 
     tone(12,247);
-    delay(quarter);
+    delay(583);
     noTone(12);
     delay(100);
 
     tone(12,196)
-    delay(quarter);
+    delay(583);
     noTone(12);
     delay(100);
 
     tone(12,175);
-    delay(quarter);
+    delay(583);
     noTone(12);
     delay(100);
 
     tone(12,196);
-    delay(quarter);
+    delay(583);
     noTone(12);
     delay (100)
 
     //third measure
     tone(12,311);
-    delay(eigth);
+    delay(291);
     noTone(12);
     delay(100);
 
     tone(12,262);
-    delay(eigth);
+    delay(291);
     noTone(12);
-    delay(100);
+    delay(50);
 
     tone(12,311);
-    delay(eigth); 
+    delay(291); 
     noTone(12);
-    delay(100);
+    delay(50);
 
     tone(12,262);
-    delay(eigth);
+    delay(291);
     noTone(12);
-    delay(100);
+    delay(50);
 
     toe(12,311);
-    delay(eigth);
+    delay(291);
     noTone(12);
-    delay(100);
+    delay(50);
 
     tone (12,349);
-    delay(eigth);
+    delay(291);
     noTone(12);
-    delay(100);
+    delay(50);
 
     //fourth measure
     tone(12,294);
-    delay(dothalf);
+    delay(1748);
     noTone(12);
-    delay(100+eigth)
+    delay(341)
+    //special delay ^
 
     tone(12,392);
-    delay(eight);
+    delay(291);
     noTone(12);
-    delay(100);
+    delay(50);
 
     //fifth measure
-    
+
 
 
 }}
