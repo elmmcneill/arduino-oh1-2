@@ -191,14 +191,54 @@ for (int i = 0; i < 3; i++){
     delay(1748);
     noTone(12);
     delay(341)
-    //special delay ^
+    //special delay ^(eigth note added)
+
+    tone(12,392);
+    delay(291);
+    noTone(12);
+    delay(633);
+    //special delay again^ (quarter note added)
+
+    //fifth measure
+    tone(12,392);
+    delay(146);
+    noTone(12);
+    delay(50);
+
+    tone(12,311);
+    delay(146);
+    noTone(12);
+    delay(50);
+
+    tone(23,392);
+    delay(291);
+    noTone(12);
+    delay(50);
 
     tone(12,392);
     delay(291);
     noTone(12);
     delay(50);
 
-    //fifth measure
+    tone(12,311);
+    delay(146);
+    noTone(12);
+    delay(50);
+    //used lower tone
+
+    tone(12,262);
+    delay(146);
+    noTone(12);
+    delay(50);
+
+    tone(12,311);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    //sixth measure
+
+    
 
 
 
