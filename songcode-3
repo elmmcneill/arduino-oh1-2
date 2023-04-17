@@ -423,7 +423,54 @@ for (int i = 0; i < 3; i++){
     delay(50);
 
     //eleventh measure
+    tone(12,415);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,415);
+    delay(146);
+    noTone(12);
+    delay(50);
+
+    tone(12,415);
+    delay(146);
+    noTone(12);
+    delay(50);
+
+    tone(12,415);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,415);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,311);
+    delay(146);
+    noTone(12);
+    delay(50);
     
+    tone(12,415);
+    delay(291);
+    noTone(12);
+    delay(50);
+    
+    tone(12,311);
+    delay(146);
+    noTone(12);
+    delay(50);
+
+    tone(12,392);
+    delay(583);
+    noTone(12);
+    delay(50);
+
+    //measure 12
+
+
 
 
 
