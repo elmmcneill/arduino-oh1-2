@@ -361,8 +361,42 @@ for (int i = 0; i < 3; i++){
     delay(50);
 
     //ninth measure
+    tone(12,311);
+    delay(291);
+    noTone(12);
+    delay(50);
 
+    tone(12,233);
+    delay(291);
+    noTone(12):
+    delay(50);
 
+    tone(12,311);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,392);
+    delay(583);
+    noTone(12);
+    delay(50);
+
+    tone(12,311);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,262);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,294);
+    delay(583);
+    noTone(12);
+    delay(50);
+
+    //tenth measure
 
     
 
