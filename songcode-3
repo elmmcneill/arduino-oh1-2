@@ -287,6 +287,46 @@ for (int i = 0; i < 3; i++){
     noTone(12);
     delay(50);
 
+    //seventh measure
+    tone(12,392);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,415);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,392);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,446);
+    delay(583);
+    noTone(12);
+    delay(50);
+
+    tone(12,415);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,392);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    tone(12,349);
+    delay(291);
+    noTone(12);
+    delay(50);
+
+    //eight measure
+    //might need to check octave bits cause it's very low
+    tone(12,196)
+
 
 
     
