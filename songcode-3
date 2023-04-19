@@ -303,7 +303,7 @@ for (int i = 0; i < 3; i++){
     noTone(12);
     delay(50);
 
-    tone(12,446);
+    tone(12,4g6);
     delay(583);
     noTone(12);
     delay(50);
