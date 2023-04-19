@@ -814,7 +814,214 @@ for (int i = 0; i < 3; i++){
   noTone(12);
   delay(50);
 
+//twentyone measure
+  tone(12,0);
+  delay(291);
+  noTone(12);
+  delay(50);
 
+  tone(12,466);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,349);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,440);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,349);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,440);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,466);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+//twentytwo measure
+  tone(12,415);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,415);
+  delay(1165);
+  noTone(12);
+  delay(50);
+
+  tone(12,0);
+  delay(583);
+  noTone(12);
+  delay(50);
+
+  tone(12,0);
+  delay(583);
+  noTone(12);
+  delay(50);
+
+//twentythree measure
+  tone(12,587);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,587);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,587);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,740);
+  delay(146);
+  noTone(12);
+  delay(50);
+  
+  tone(12,659);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,587);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,0);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+//twentyfour measure
+  tone(12,587);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,587);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,740);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,659);
+  delay(291);
+  noTone(12);
+  delay(50);
+  
+  tone(12,587);
+  delay(146);
+  noTone(12);
+  delay(50);
+  
+  tone(12,0);
+  delay(146);
+  noTone(12);
+  delay(50);
 
 
 
