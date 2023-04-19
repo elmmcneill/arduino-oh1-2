@@ -176,7 +176,7 @@ for (int i = 0; i < 3; i++){
     noTone(12);
     delay(50);
 
-    toe(12,311);
+    tone(12,311);
     delay(291);
     noTone(12);
     delay(50);
@@ -509,7 +509,171 @@ for (int i = 0; i < 3; i++){
     noTone(12);
     delay(50);
     
+    //thirteen measure
+  tone(12,262);
+  delay(291);
+  noTone(12);
+  delay(50);
 
+  tone(12,294);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,349);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(437);
+  noTone(12);
+  delay(50);
+
+  tone(12,466);
+  delay(437);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(583);
+  noTone(12);
+  delay(50);
+
+//fourteen measure
+  tone(12,0);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,196);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,196);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,196);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,247);
+  delay(583);
+  noTone(12);
+  delay(50);
+
+  tone(12,262);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+//fifthteen measure
+  tone(12,262);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,294);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,349);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(437);
+  noTone(12);
+  delay(50);
+
+  tone(12,466);
+  delay(437);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(437);
+  noTone(12);
+  delay(50);
+
+//sixteen measure
+  tone(12,0);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,196);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,196);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,196);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,196);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,196);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,0);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,294);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,294);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,262);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+// test comment
 
 
 
