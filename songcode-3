@@ -763,7 +763,7 @@ for (int i = 0; i < 3; i++){
   noTone(12);
   delay(50);
 
-  tone(12,466);
+  tone(12,415);
   delay(291);
   noTone(12);
   delay(50);
@@ -773,7 +773,7 @@ for (int i = 0; i < 3; i++){
   noTone(12);
   delay(50);
 
-  tone(12,440);
+  tone(12,415);
   delay(291);
   noTone(12);
   delay(50);
@@ -783,7 +783,7 @@ for (int i = 0; i < 3; i++){
   noTone(12);
   delay(50);
 
-  tone(12,440);
+  tone(12,415);
   delay(291);
   noTone(12);
   delay(50);
@@ -820,7 +820,7 @@ for (int i = 0; i < 3; i++){
   noTone(12);
   delay(50);
 
-  tone(12,466);
+  tone(12,415);
   delay(291);
   noTone(12);
   delay(50);
@@ -830,7 +830,7 @@ for (int i = 0; i < 3; i++){
   noTone(12);
   delay(50);
 
-  tone(12,440);
+  tone(12,415);
   delay(291);
   noTone(12);
   delay(50);
@@ -840,12 +840,12 @@ for (int i = 0; i < 3; i++){
   noTone(12);
   delay(50);
 
-  tone(12,440);
+  tone(12,415);
   delay(291);
   noTone(12);
   delay(50);
 
-  tone(12,466);
+  tone(12,415);
   delay(291);
   noTone(12);
   delay(50);
