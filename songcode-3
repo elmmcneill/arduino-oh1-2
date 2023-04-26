@@ -1269,6 +1269,78 @@ delay(50);
   noTone(12);
   delay(50);
 
+  tone(12,262);
+delay(291);
+noTone(12);
+delay(50);
+
+tone(12,208);
+delay(583);
+noTone(12);
+delay(50);
+
+tone(12,208);
+delay(583);
+noTone(12);
+delay(500);
+    
+tone(12,247);
+delay(583);
+noTone(12);
+delay(50);
+
+//measure 32
+tone(12,247);
+delay(291);
+noTone(12);
+delay(50);
+
+tone(12,247);
+delay(291);
+noTone(12);
+delay(50);
+
+tone(12,208);
+delay(291);
+noTone(12);
+delay(50);
+
+tone(12,208);
+delay(583);
+noTone(12);
+delay(50);
+
+tone(12,208);
+delay(291);
+noTone(12);
+delay(50);
+
+tone(12,247);
+delay(291);
+noTone(12);
+delay(50);
+
+//measure 33
+tone(12,262);
+delay(583);
+noTone(12);
+delay(50);
+
+tone(12,262);
+delay(583);
+noTone(12);
+delay(50);
+
+tone(12,208);
+delay(583);
+noTone(12);
+delay(50);
+
+tone(12,196);
+delay(291);
+noTone(12);
+delay(50);
+
 
 
 
