@@ -1802,7 +1802,7 @@ delay(50);
   tone(12,392);
   delay(437);
   noTone(12);
-  delay(500000000000000);
+  delay(50);
 
 
 
