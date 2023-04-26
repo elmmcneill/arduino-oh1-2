@@ -1111,7 +1111,10 @@ for (int i = 0; i < 3; i++){
   noTone(12);
   delay(50);
 
-
+  tone(12,196);
+  delay(146);
+  noTone(12);
+  delay(50);
 
 
 
