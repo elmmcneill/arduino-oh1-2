@@ -714,12 +714,7 @@ for (int i = 0; i < 3; i++){
   tone(12,156);
   delay(291);
   noTone(12);
-  delay(50);
-
-  tone(12,0);
-  delay(291);
-  noTone(12);
-  delay(50);
+  delay(341);
 
   tone(12,415);
   delay(291);
@@ -817,17 +812,8 @@ for (int i = 0; i < 3; i++){
   tone(12,415);
   delay(1165);
   noTone(12);
-  delay(50);
+  delay(683);
 
-  tone(12,0);
-  delay(583);
-  noTone(12);
-  delay(50);
-
-  tone(12,0);
-  delay(583);
-  noTone(12);
-  delay(50);
 
 //twentythree measure
   tone(12,175);
@@ -974,12 +960,8 @@ for (int i = 0; i < 3; i++){
   tone(12,175);
   delay(146);
   noTone(12);
-  delay(50);
+  delay(196);
   
-  tone(12,0);
-  delay(146);
-  noTone(12);
-  delay(50);
 
 
   //measure 25
@@ -1529,7 +1511,307 @@ delay(583);
 noTone(12);
 delay(50);
 
+//measure 41
 
+  tone(12,392);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(196);
+
+  tone(12,349);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,349);
+  delay(437);
+  noTone(12);
+  delay(50);
+
+// measure 42
+  tone(12,294);
+  delay(291);
+  noTone(12);
+  delay(341);
+
+
+  tone(12,394);
+  delay(583);
+  noTone(12);
+  delay(50);
+
+  tone(12,262);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,394);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(341);
+
+// measure 43
+
+  tone(12,196);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,196);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,196);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,294);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,294);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,262);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(291);
+  noTone(12);
+  delay(196);
+
+
+  tone(12,262);
+  delay(291);
+  noTone(12);
+  delay(50);  
+
+//measure 44
+  tone(12,349);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,349);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,294);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(291);
+  noTone(12);
+  delay(341);
+
+  tone(12,392);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,349);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+// measure 45
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,349);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,262);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+// measure 46
+  tone(12,294);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,294);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,311);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,294);
+  delay(583);
+  noTone(12);
+  delay(50); 
+
+  tone(12,698);
+  delay(437);
+  noTone(12);
+  delay(50); 
+
+  tone(12,831);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,1175);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,1047);
+  delay(583);
+  noTone(12);
+  delay(50);
+  
+//measure 47
+  tone(12,415);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,415);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,415);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,415);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,415);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,415);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(583);
+  noTone(12);
+  delay(50);
+
+// measure 48
+  tone(12,415);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,415);
+  delay(291);
+  noTone(12);
+  delay(50);
+
+  tone(12,415);
+  delay(146);
+  noTone(12);
+  delay(50);
+
+  tone(12,392);
+  delay(437);
+  noTone(12);
+  delay(50);
 
 
 
