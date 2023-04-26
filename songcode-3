@@ -89,19 +89,10 @@
 #define NOTE_DS8 4978
 #define REST      0
 
-int maintempo = 8000;
-int tempo = 0.5* maintempo;
-int quarter = tempo/4;
-int eigth = tempo/8;
-int sixteenth = tempo/16;
-int dotquarter = tempo * 0.375;
-int dothalf = tempo/3; 
-int whole = tempo;
-int smallbreak = 100;
 
 void setup ()
 {
-for (int i = 0; i < 3; i++){
+for (int i = 0; i < 1; i++){
     //first measure
     tone(12,311);
     delay(291);
