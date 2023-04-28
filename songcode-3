@@ -22,7 +22,7 @@ int A4 = 440;
 int Ab3 = 208;
 int C6 = 1047;
 int D6 = 1175;
-int Ab5 = 831
+int Ab5 = 831;
 int F5 = 698; 
 
 int eigth = 291;
@@ -31,8 +31,8 @@ int half = 1165;
 int sixteenth = 146;
 int shortrest = 50;
 int rest = 0;
-int dotted half = 1748;
-int dotted eigth = 437; 
+int dottedhalf = 1748;
+int dottedeigth = 437; 
 
 
 void setup ()
@@ -124,12 +124,12 @@ for (int i = rest; i < 1; i++){
 
     //fourth measure
     tone(output,D4);
-    delay(dotted half);
+    delay(dottedhalf);
     noTone(output);
     delay(shortrest);
 
     tone (output,rest);
-    delay(eight);
+    delay(eigth);
     noTone(output);
     delay(shortrest);
    
@@ -435,12 +435,12 @@ for (int i = rest; i < 1; i++){
   delay(shortrest);
 
   tone(output,G4);
-  delay(dotted eigth);
+  delay(dottedeigth);
   noTone(output);
   delay(shortrest);
 
   tone(output,Bb4);
-  delay(dotted eigth);
+  delay(dottedeigth);
   noTone(output);
   delay(shortrest);
 
@@ -507,17 +507,17 @@ for (int i = rest; i < 1; i++){
   delay(shortrest);
 
   tone(output,G4);
-  delay(dotted eigth);
+  delay(dottedeigth);
   noTone(output);
   delay(shortrest);
 
   tone(output,Bb4);
-  delay(dotted eigth);
+  delay(dottedeigth);
   noTone(output);
   delay(shortrest);
 
   tone(output,G4);
-  delay(dotted eigth);
+  delay(dottedeigth);
   noTone(output);
   delay(shortrest);
 
@@ -605,7 +605,7 @@ for (int i = rest; i < 1; i++){
   delay(shortrest);
 
   tone(output,Ab4);
-  delay(dotted eigth);
+  delay(dottedeigth);
   noTone(output);
   delay(shortrest);
 
@@ -1509,7 +1509,7 @@ delay(shortrest);
   delay(shortrest);
 
   tone(output,F4);
-  delay(dotted eigth);
+  delay(dottedeigth);
   noTone(output);
   delay(shortrest);
 
@@ -1687,7 +1687,7 @@ delay(shortrest);
   delay(shortrest); 
 
   tone(output,F5);
-  delay(dotted eigth);
+  delay(dottedeigth);
   noTone(output);
   delay(shortrest); 
 
@@ -1764,7 +1764,7 @@ delay(shortrest);
   delay(shortrest);
 
   tone(output,G4);
-  delay(dotted eigth);
+  delay(dottedeigth);
   noTone(output);
   delay(shortrest);
 
