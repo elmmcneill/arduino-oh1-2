@@ -22,7 +22,7 @@ int Ab3 = 208;
 int C6 = 1047;
 int D6 = 1175;
 int Ab5 = 831;
-int F5 = 698: 
+int F5 = 698;
 int A4 = 440;
 
 int eigth = 291;
@@ -662,7 +662,7 @@ for (int i = rest; i < 1; i++){
   delay(shortrest);
 
   tone(output,rest);
-  delay(eight);
+  delay(eigth);
   noTone(output);
   delay(shortrest);
   
