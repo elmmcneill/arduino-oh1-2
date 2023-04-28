@@ -1,1817 +1,1772 @@
-#define NOTE_B0  31
-#define NOTE_C1  33
-#define NOTE_CS1 35
-#define NOTE_D1  37
-#define NOTE_DS1 39
-#define NOTE_E1  41
-#define NOTE_F1  44
-#define NOTE_FS1 46
-#define NOTE_G1  49
-#define NOTE_GS1 52
-#define NOTE_A1  55
-#define NOTE_AS1 58
-#define NOTE_B1  62
-#define NOTE_C2  65
-#define NOTE_CS2 69
-#define NOTE_D2  73
-#define NOTE_DS2 78
-#define NOTE_E2  82
-#define NOTE_F2  87
-#define NOTE_FS2 93
-#define NOTE_G2  98
-#define NOTE_GS2 104
-#define NOTE_A2  110
-#define NOTE_AS2 117
-#define NOTE_B2  123
-#define NOTE_C3  131
-#define NOTE_CS3 139
-#define NOTE_D3  147
-#define NOTE_DS3 156
-#define NOTE_E3  165
-#define NOTE_F3  175
-#define NOTE_FS3 185
-#define NOTE_G3  196
-#define NOTE_GS3 208
-#define NOTE_A3  220
-#define NOTE_AS3 233
-#define NOTE_B3  247
-#define NOTE_C4  262
-#define NOTE_CS4 277
-#define NOTE_D4  294
-#define NOTE_DS4 311
-#define NOTE_E4  330
-#define NOTE_F4  349
-#define NOTE_FS4 370
-#define NOTE_G4  392
-#define NOTE_GS4 415
-#define NOTE_A4  440
-#define NOTE_AS4 466
-#define NOTE_B4  494
-#define NOTE_C5  523
-#define NOTE_CS5 554
-#define NOTE_D5  587
-#define NOTE_DS5 622
-#define NOTE_E5  659
-#define NOTE_F5  698
-#define NOTE_FS5 740
-#define NOTE_G5  784
-#define NOTE_GS5 831
-#define NOTE_A5  880
-#define NOTE_AS5 932
-#define NOTE_B5  988
-#define NOTE_C6  1047
-#define NOTE_CS6 1109
-#define NOTE_D6  1175
-#define NOTE_DS6 1245
-#define NOTE_E6  1319
-#define NOTE_F6  1397
-#define NOTE_FS6 1480
-#define NOTE_G6  1568
-#define NOTE_GS6 1661
-#define NOTE_A6  1760
-#define NOTE_AS6 1865
-#define NOTE_B6  1976
-#define NOTE_C7  2093
-#define NOTE_CS7 2217
-#define NOTE_D7  2349
-#define NOTE_DS7 2489
-#define NOTE_E7  2637
-#define NOTE_F7  2794
-#define NOTE_FS7 2960
-#define NOTE_G7  3136
-#define NOTE_GS7 3322
-#define NOTE_A7  3520
-#define NOTE_AS7 3729
-#define NOTE_B7  3951
-#define NOTE_C8  4186
-#define NOTE_CS8 4435
-#define NOTE_D8  4699
-#define NOTE_DS8 4978
-#define REST      0
+int output = 12;
+int Eb4 = 311;
+int C4 = 262;
+int D4 = 294;
+int B3 = 247;
+int G3 = 196;
+int F3 = 175;
+int F4 = 349;
+int G4 = 392;
+int Eb3 = 156; 
+int C3 = 131; 
+int D3 = 147; 
+int Ab4 = 415;
+int Bb4 = 466;
+int G2 = 98; 
+int F2 = 87;
+int B2 = 123;
+int Bb3 = 233;
+int Ab2 = 104; 
+int Bb2 = 117;
+int Ab3 = 208;
+int C6 = 1047;
+int D6 = 1175;
+int Ab5 = 831;
+int F5 = 698;
+int Ax4 = 440;
 
-int maintempo = 8000;
-int tempo = 0.5* maintempo;
-int quarter = tempo/4;
-int eigth = tempo/8;
-int sixteenth = tempo/16;
-int dotquarter = tempo * 0.375;
-int dothalf = tempo/3; 
-int whole = tempo;
-int smallbreak = 100;
+int eigth = 291;
+int quarter = 583;
+int half = 1165;
+int sixteenth = 146;
+int shortrest = 50;
+int rest = 0;
+int dottedhalf = 1748;
+int dottedeigth = 437; 
+
 
 void setup ()
 {
-for (int i = 0; i < 3; i++){
+for (int i = rest; i < 1; i++){
     //first measure
-    tone(12,311);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,262);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,C4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,311);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,262);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,C4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,311);
-    delay(291);
-    noTone(12);
-    delay(50); 
+    tone(output,Eb4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest); 
 
-    tone(12,294);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,D4);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
     
     //second measure
 
-    tone(12,247);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,B3);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,196);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,G3);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,175);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,F3);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,196);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,G3);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
     //third measure
-    tone(12,311);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,262);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,C4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,311);
-    delay(291); 
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(eigth); 
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,262);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,C4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,311);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone (12,349);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone (output,F4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
     //fourth measure
-    tone(12,294);
-    delay(1748);
-    noTone(12);
-    delay(341);
-    //special delay ^(eigth note added)
+    tone(output,D4);
+    delay(dottedhalf);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,392);
-    delay(291);
-    noTone(12);
-    delay(633);
-    //special delay again^ (quarter note added)
+    tone (output,rest);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
+   
+    tone(output,G4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
+
+    tone (output,rest);
+    delay(quarter);
+    noTone(output);
+    delay (quarter);
+
 
     //fifth measure
-    tone(12,392);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,311);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,392);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,392);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,156);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,Eb3);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
     //used lower tone
 
-    tone(12,131);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,C3);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,156);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Eb3);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
     //sixth measure
-    tone(12,156);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Eb3);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,147);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,D3);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,147);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,D3);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,311);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,349);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,F4);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,311);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,349);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,F4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,392);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
     
-    tone(12,349);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,F4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,392);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
     //seventh measure
-    tone(12,392);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,415);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Ab4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,392);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,466);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,Bb4);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,415);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Ab4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,392);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,349);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,F4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
     //eight measure
     //might need to check octave bits cause it's very low
-    tone(12,98);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,G2);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
     
-    tone(12,156);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Eb3);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,98);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,G2);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,87);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,F2);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,131);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,C3);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,123);
-    delay(291);
-    noTone(12);
-    delay(12);
+    tone(output,B2);
+    delay(eigth);
+    noTone(output);
+    delay(output);
 
-    tone(12,131);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,C3);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
     //ninth measure
-    tone(12,311);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,233);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Bb3);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,311);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,392);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,311);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,262);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,C4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,294);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,D4);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
     //tenth measure
-    tone(12,196);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,G3);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,294);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,D4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,392);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,104);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,Ab2);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,104);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,Ab2);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
     //eleventh measure
-    tone(12,415);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Ab4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,415);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,Ab4);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,415);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,Ab4);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,415);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Ab4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,415);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Ab4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,311);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
     
-    tone(12,415);
-    delay(291);
-    noTone(12);
-    delay(50);
+    tone(output,Ab4);
+    delay(eigth);
+    noTone(output);
+    delay(shortrest);
     
-    tone(12,311);
-    delay(146);
-    noTone(12);
-    delay(50);
+    tone(output,Eb4);
+    delay(sixteenth);
+    noTone(output);
+    delay(shortrest);
 
-    tone(12,392);
-    delay(583);
-    noTone(12);
-    delay(50);
+    tone(output,G4);
+    delay(quarter);
+    noTone(output);
+    delay(shortrest);
 
     //thirteen measure
-  tone(12,262);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,C4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,294);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(437);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(dottedeigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,466);
-  delay(437);
-  noTone(12);
-  delay(50);
+  tone(output,Bb4);
+  delay(dottedeigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(583);
-  noTone(12); 
-  delay(50);
+  tone(output,G4);
+  delay(quarter);
+  noTone(output); 
+  delay(shortrest);
 
 //fourteen measure
-  tone(12,0);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,rest);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,247);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,B3);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,262);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,C4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
 //fifthteen measure
-  tone(12,262);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,C4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,294);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(437);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(dottedeigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,466);
-  delay(437);
-  noTone(12);
-  delay(50);
+  tone(output,Bb4);
+  delay(dottedeigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(437);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(dottedeigth);
+  noTone(output);
+  delay(shortrest);
 
 
 //sixteen measure
-  tone(12,0);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,rest);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,98);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G2);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,98);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G2);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,98);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G2);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,98);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G2);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,98);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G2);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,0);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,rest);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,147);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,156);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,147);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,131);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,C3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
 //seventeen measure
-  tone(12,262);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,C4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,294);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(437);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(dottedeigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,466);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,Bb4);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
 
 //eighteen measure
-  tone(12,98);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G2);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,123);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,B2);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,147);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
   
-  tone(12,117);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Bb2);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,87);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F2);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,87);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F2);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,117);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Bb2);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,175);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
 //nineteen measure
-  tone(12,156);
-  delay(291);
-  noTone(12);
-  delay(341);
+  tone(output,Eb3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,rest);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
+  
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
   
 //twenty measure
-  tone(12,294);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,D4);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,247);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,B3);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,262);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,C4);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
 
 //twentyone measure
-  tone(12,0);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,rest);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,466);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Bb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,440);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ax4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,440);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ax4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,466);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Bb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
 //twentytwo measure
-  tone(12,415);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(half);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(1165);
-  noTone(12);
-  delay(683);
+  tone(output,rest);
+  delay(half);
+  noTone(output);
+  delay(shortrest);
 
 
 //twentythree measure
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,233);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,Bb3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
   
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,0);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,rest);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
 //twentyfour measure
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,233);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,Bb3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
   
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(196);
-  
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
+
+  tone(output,rest);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
+    
 
 
   //measure 25
 
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,175);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,156);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,131);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,C3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
   //measure 26 
-  tone(12,196);
-  delay(291);
-  noTone(12);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
   delay(2090);
 
   //measure 27
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,208);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,175);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
 //measure 28
-  tone(12,175);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-tone(12,196);
-delay(146);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(sixteenth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(146);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(sixteenth);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,175);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,F3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
 //measure 29
-tone(12,196);
-delay(146);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(sixteenth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(146);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(sixteenth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(146);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(sixteenth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(146);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(sixteenth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(146);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(sixteenth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(146);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(sixteenth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(146);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(sixteenth);
+noTone(output);
+delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,175);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,156);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,131);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,C3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
 //measure 30
-  tone(12,196);
-  delay(291);
-  noTone(12);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
   delay(1000);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,175);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,208);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
 
 //measure 31
-  tone(12,247);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,B3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,262);
-delay(291);
-noTone(12);
-delay(50);
+  tone(output,C4);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(583);
-noTone(12);
+tone(output,Ab3);
+delay(quarter);
+noTone(output);
 delay(500);
     
-tone(12,247);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,B3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
 //measure 32
-tone(12,247);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,B3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,247);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,B3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,247);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,B3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
 //measure 33
-tone(12,262);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,C4);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,262);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,C4);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
 //measure 34
-tone(12,247);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,B3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,247);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,B3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
 //measure 35
-tone(12,247);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,B3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,262);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,C4);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,262);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,C4);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
 //measure 36
-tone(12,247);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,B3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,247);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,B3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
 //measure 37
-tone(12,208);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,262);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,C4);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,262);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,C4);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
 //meausre 38
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,262);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,C4);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,247);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,B3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,175);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,F3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
 //meausre 39
-tone(12,196);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,262);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,C4);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,262);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,C4);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,208);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,Ab3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
 //measure 40
-tone(12,196);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,175);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,F3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,175);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,F3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(291);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(eigth);
+noTone(output);
+delay(shortrest);
 
-tone(12,196);
-delay(583);
-noTone(12);
-delay(50);
+tone(output,G3);
+delay(quarter);
+noTone(output);
+delay(shortrest);
 
 //measure 41
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(291);
-  noTone(12);
-  delay(196);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
+  delay(G3);
 
-  tone(12,349);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(437);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(dottedeigth);
+  noTone(output);
+  delay(shortrest);
 
 // measure 42
-  tone(12,294);
-  delay(291);
-  noTone(12);
+  tone(output,D4);
+  delay(eigth);
+  noTone(output);
   delay(341);
 
 
-  tone(12,394);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,262);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,C4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,394);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(291);
-  noTone(12);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
   delay(341);
 
 // measure 43
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,196);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,G3);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,294);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,D4);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,294);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,262);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,C4);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
-  delay(196);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
+  delay(G3);
 
 
-  tone(12,262);
-  delay(291);
-  noTone(12);
-  delay(50);  
+  tone(output,C4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);  
 
 //measure 44
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,294);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
   delay(341);
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
 // measure 45
-  tone(12,311);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,349);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,F4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,262);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,C4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
 // measure 46
-  tone(12,294);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,294);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,311);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,Eb4);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,294);
-  delay(583);
-  noTone(12);
-  delay(50); 
+  tone(output,D4);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest); 
 
-  tone(12,698);
-  delay(437);
-  noTone(12);
-  delay(50); 
+  tone(output,F5);
+  delay(dottedeigth);
+  noTone(output);
+  delay(shortrest); 
 
-  tone(12,831);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,Ab5);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,1175);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,D6);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,1047);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,C6);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
   
 //measure 47
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(583);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(quarter);
+  noTone(output);
+  delay(shortrest);
 
 // measure 48
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,G4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(291);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(eigth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,415);
-  delay(146);
-  noTone(12);
-  delay(50);
+  tone(output,Ab4);
+  delay(sixteenth);
+  noTone(output);
+  delay(shortrest);
 
-  tone(12,392);
-  delay(437);
-  noTone(12);
-  delay(5000);
+  tone(output,G4);
+  delay(dottedeigth);
+  noTone(output);
+  delay(shortrest);
 
 
 
