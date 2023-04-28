@@ -23,7 +23,7 @@ int C6 = 1047;
 int D6 = 1175;
 int Ab5 = 831;
 int F5 = 698;
-int A4 = 440;
+int Ax4 = 440;
 
 int eigth = 291;
 int quarter = 583;
@@ -733,7 +733,7 @@ for (int i = rest; i < 1; i++){
   noTone(output);
   delay(shortrest);
 
-  tone(output,A4);
+  tone(output,Ax4);
   delay(eigth);
   noTone(output);
   delay(shortrest);
@@ -743,7 +743,7 @@ for (int i = rest; i < 1; i++){
   noTone(output);
   delay(shortrest);
 
-  tone(output,A4);
+  tone(output,Ax4);
   delay(eigth);
   noTone(output);
   delay(shortrest);
