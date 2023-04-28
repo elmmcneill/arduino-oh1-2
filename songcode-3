@@ -18,12 +18,12 @@ int B2 = 123;
 int Bb3 = 233;
 int Ab2 = 104; 
 int Bb2 = 117;
-int A4 = 440;
 int Ab3 = 208;
 int C6 = 1047;
 int D6 = 1175;
 int Ab5 = 831;
-int F5 = 698; 
+int F5 = 698: 
+int A4 = 440;
 
 int eigth = 291;
 int quarter = 583;
